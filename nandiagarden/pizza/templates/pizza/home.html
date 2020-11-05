@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<h1>Nandia's Garden</h1>
+{% extends 'pizza/base.html' %}
+{% block 'body' %}
+<div class="text-center">
+    {% load static %}
+    <img src="{% static 'nandiasgarden.jpg' %}" class="img-fluid" alt="Nandia's Garden">
 
-<a href="{% url 'order' %}">Order a pizza</a>
-</body>
-</html>
+{% endblock %}
